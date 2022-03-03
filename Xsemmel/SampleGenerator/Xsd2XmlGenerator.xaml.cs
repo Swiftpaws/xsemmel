@@ -21,7 +21,7 @@ namespace XSemmel.SampleGenerator
 
         private readonly string _currentFileName;
         private readonly FoldingManager _foldingManager;
-        private readonly AbstractFoldingStrategy _foldingStrategy;
+        private readonly XmlFoldingStrategy _foldingStrategy;
 
         public Xsd2XmlGenerator(string currentFileName)
         {

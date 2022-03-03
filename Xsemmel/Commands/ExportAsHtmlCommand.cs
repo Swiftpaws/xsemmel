@@ -53,7 +53,7 @@ namespace XSemmel.Commands
                 try
                 {
                     IHighlighter highlighter = new DocumentHighlighter(
-                        textEditor.Document, textEditor.SyntaxHighlighting.MainRuleSet);
+                        textEditor.Document, textEditor.SyntaxHighlighting);
                     string html = HtmlClipboard.CreateHtmlFragment(
                         textEditor.Document, highlighter, null, new HtmlOptions());
 

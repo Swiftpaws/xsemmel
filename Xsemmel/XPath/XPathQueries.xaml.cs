@@ -90,7 +90,7 @@ namespace XSemmel.XPath
                 try
                 {
                     IHighlighter highlighter = new DocumentHighlighter(
-                        _edtXPath.Document, _edtXPath.SyntaxHighlighting.MainRuleSet);
+                        _edtXPath.Document, _edtXPath.SyntaxHighlighting);
                     string html = HtmlClipboard.CreateHtmlFragment(
                         _edtXPath.Document, highlighter, null, new HtmlOptions());
 

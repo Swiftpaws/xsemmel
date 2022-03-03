@@ -139,7 +139,7 @@ namespace XSemmel.Editor
 
         #region Folding
         private readonly FoldingManager _foldingManager;
-        private AbstractFoldingStrategy _foldingStrategy;
+        private XmlFoldingStrategy _foldingStrategy;
 
         void installFoldingManager()
         {

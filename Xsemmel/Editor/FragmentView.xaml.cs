@@ -15,7 +15,7 @@ namespace XSemmel.Editor
     {
 
         private readonly FoldingManager _foldingManager;
-        private readonly AbstractFoldingStrategy _foldingStrategy;
+        private readonly XmlFoldingStrategy _foldingStrategy;
 
         public FragmentView()
         {

@@ -1,9 +1,9 @@
-﻿<Window x:Class="XSemmel.TcpListener.TcpListeningWindow"
+﻿<fluent:RibbonWindow x:Class="XSemmel.TcpListener.TcpListeningWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:AvalonEdit="clr-namespace:ICSharpCode.AvalonEdit;assembly=ICSharpCode.AvalonEdit"
         xmlns:fluent="clr-namespace:Fluent;assembly=Fluent"
-        fluent:RibbonProperties.TitleBarHeight="0"
+        TitleBarHeight="0"
         Title="Listening to TCP stream" Height="350" Width="525" MinHeight="150" MinWidth="250"
         Icon="/Images/Document_TCP_16x16.png" >
     <DockPanel>
@@ -102,4 +102,4 @@
         </AvalonEdit:TextEditor>
 
     </DockPanel>
-</Window>
+</fluent:RibbonWindow>
