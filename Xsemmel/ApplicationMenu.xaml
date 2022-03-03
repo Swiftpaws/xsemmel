@@ -53,24 +53,26 @@
                     <TextBlock Text="Open more" VerticalAlignment="Center" Margin="5 0 0 0"/>
                 </StackPanel>
             </fluent:BackstageTabItem.Header>
-            <StackPanel Orientation="Vertical">
-                <fluent:Button
-                    Header="Open from clipboard" Icon="/Images/OpenFromClipboard_32x32.png"
-                    Command="{StaticResource OpenFromClipboardCommand}"
-                    CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type fluent:RibbonWindow}}, Path=Data}"
-                />
-                <fluent:Button
+            <StackPanel Margin="15,5">
+                <StackPanel Orientation="Horizontal">
+                    <fluent:Button
+                        Header="Open from clipboard" Icon="/Images/OpenFromClipboard_32x32.png"
+                        Command="{StaticResource OpenFromClipboardCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type fluent:RibbonWindow}}, Path=Data}"
+                    />
+                    <fluent:Button 
                         Header="Open from TCP stream" Icon="/Images/Document_TCP_32x32.png"
                         Command="{StaticResource OpenFromTcpCommand}"
                         CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type fluent:RibbonWindow}}, Path=Data}"
-                />
-                <fluent:Button
+                    />
+                    <fluent:Button
                         Header="Reload file"
                         Icon="/Images/112_RefreshArrow_Blue_32x32.png"
                         Command="{StaticResource ReloadCommand}"
                         CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type fluent:RibbonWindow}}, Path=Data}"
-                />
-                <fluent:SeparatorTabItem Header="Recent" />
+                    />
+                </StackPanel>
+                <fluent:SeparatorTabItem Header="Recent" FontWeight="Bold" Margin="0,15,0,0" />
 
                 <StackPanel x:Name="_mnuOpen" x:FieldModifier="private" Orientation="Vertical" />
             </StackPanel>
@@ -98,8 +100,6 @@
                 <ContentPresenter IsVisibleChanged="_pnlPrinting_OnIsVisibleChanged" />
             </DockPanel>
         </fluent:BackstageTabItem>
-          
-        <fluent:SeparatorTabItem Header="" />
 
         <fluent:BackstageTabItem>
             <fluent:BackstageTabItem.Header>
@@ -108,7 +108,7 @@
                     <TextBlock Text="w3schools Reference" VerticalAlignment="Center" Margin="5 0 0 0"/>
                 </StackPanel>
             </fluent:BackstageTabItem.Header>
-            <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="15,5">
                 <fluent:Button
                     Header="XML Schema Reference"
                     Icon="/Images/w3.png"
@@ -135,9 +135,7 @@
                 />
             </StackPanel>
         </fluent:BackstageTabItem>
-    
-        <fluent:SeparatorTabItem Header="" />
-    
+
         <fluent:Button
             Header="Options"
             Icon="/Images/Gear_16x16.png"
