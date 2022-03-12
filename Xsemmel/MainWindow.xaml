@@ -395,8 +395,14 @@
             </fluent:RibbonTabItem>
 
             <fluent:Ribbon.ContextualGroups>
-                <fluent:RibbonContextualTabGroup x:Name="contextribGrid" Header="Grid View" />
-                <fluent:RibbonContextualTabGroup x:Name="contextribTree" Header="Tree View" />
+                <fluent:RibbonContextualTabGroup x:Name="contextribGrid" Header="Grid View" 
+                                                 Background="{DynamicResource Fluent.Ribbon.Brushes.AccentBaseColorBrush}"
+                                                 BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.AccentBaseColorBrush}"
+                                                 Foreground="{DynamicResource BlackBrush}"/>
+                <fluent:RibbonContextualTabGroup x:Name="contextribTree" Header="Tree View"  
+                                                 Background="{DynamicResource Fluent.Ribbon.Brushes.AccentBaseColorBrush}"
+                                                 BorderBrush="{DynamicResource Fluent.Ribbon.Brushes.AccentBaseColorBrush}"
+                                                 Foreground="{DynamicResource BlackBrush}"/>
             </fluent:Ribbon.ContextualGroups>
         </fluent:Ribbon>
 
