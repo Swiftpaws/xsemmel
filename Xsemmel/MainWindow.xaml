@@ -23,6 +23,7 @@
             <commands:TrimXmlCommand x:Key="TrimXmlCommand"/>
             <commands:SaveCommand x:Key="SaveCommand"/>
             <commands:OpenCommand x:Key="OpenCommand"/>
+            <commands:NewFileCommand x:Key="NewFileCommand"/>
             <commands:CopyFilenameCommand x:Key="CopyFilenameCommand"/>
             <commands:Xsd2XmlGeneratorCommand x:Key="Xsd2XmlGeneratorCommand"/>
             <commands:InsertCurrentDateTimeCommand x:Key="InsertCurrentDateTimeCommand"/>
@@ -50,6 +51,13 @@
             <commands:CommentCommand x:Key="CommentCommand"/>
             <commands:UncommentCommand x:Key="UncommentCommand"/>
         </DockPanel.Resources>
+        <DockPanel.InputBindings>
+            <KeyBinding 
+                Key="N"
+                Modifiers="Control"
+                Command="{StaticResource NewFileCommand}"
+                CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type fluent:RibbonWindow}}, Path=Data}"/>
+        </DockPanel.InputBindings>
 
         <fluent:Ribbon x:Name="Ribbon" DockPanel.Dock="Top" AutomaticStateManagement="False">
             <fluent:Ribbon.QuickAccessItems>
